@@ -20,7 +20,7 @@ For development, you will only need Node.js and a node global package, Yarn, ins
 
 ## Run
 ```
-    $ git clone http://gitlab.unimedfortaleza.com.br/novas-tecnologias/gestao-de-documentos.git
+    $ git clone https://github.com/leonardo-anjos/api-saldo-carteirinha-sesc.git
     $ cd api-saldo-carteirinha-sesc
     $ yarn install
     $ yarn start or development mode with yarn dev
