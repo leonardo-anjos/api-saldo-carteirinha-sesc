@@ -1,0 +1,28 @@
+{
+  "name": "api-saldo-carteirinha-sesc",
+  "version": "1.0.0",
+  "description": "api para consultar saldo da carteirinha sesc-ce",
+  "main": "index.js",
+  "repository": "https://github.com/leonardo-anjos/api-saldo-carteirinha-sesc",
+  "author": "Leonardo Anjos <leodrums11@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "config": "^3.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-restify-mongoose": "^6.0.0",
+    "jsdom": "^16.2.1",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
