@@ -1,4 +1,5 @@
-require("dotenv").config();
+require('dotenv-flow').config();
+
 const usuarioSchema = require("../models/usuario");
 
 class UsuarioController {
