@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  api-saldo-carteirinha-sesc:
+    image: api-saldo-carteirinha-sesc
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8069
+      - 8069:8069
+    command: node --inspect=0.0.0.0:8069 server.js

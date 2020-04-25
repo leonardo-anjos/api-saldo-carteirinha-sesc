@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  api-saldo-carteirinha-sesc:
+    image: api-saldo-carteirinha-sesc
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8069
