@@ -1,34 +1,9 @@
-require('dotenv').config();
+require('dotenv-flow').config();
+
 const axios = require("axios");
 const qs = require("querystring");
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-
-// module.exports = async requestBody => {
-//   const config = {
-//     headers: {
-//       "Content-Type": "application/x-www-form-urlencoded"
-//     }
-//   };
-
-//   let r = await axios
-//     .post(process.env.SISTEMA_SESC, qs.stringify(requestBody), config)
-//     .then(result => {
-//       const dom = new JSDOM(`${result.data}`);
-
-//       let saldo = dom.window.document.getElementById("saldo").textContent;
-
-//       let formatNumber = saldo.replace("R$ ", "");
-//       let convertToNumber = formatNumber.replace(",", ".");
-
-//       return convertToNumber;
-//     })
-//     .catch(err => {
-//       console.log(err);
-//     });
-
-//   return r;
-// };
 
 module.exports = async function (req, res, next) {
 

@@ -1,3 +1,5 @@
+require('dotenv-flow').config();
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -10,7 +12,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 app.get("/", (req, res, next) => {
-  res.json({ appName: "CONSULTA SALDO SESC-CE" });
+  res.json({
+    appName: process.env.APP_NAME,
+    environment: process.env.NODE_ENV
+  });
 });
 
 app.use((req, res, next) => {
