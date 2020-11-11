@@ -11,6 +11,9 @@ Web Api RESTfull development with [express-restify-mongoose](https://florianholz
 
 ## Requirements
 
+**TIP:** In this project we use [nvm](https://github.com/nvm-sh/nvm) as version manager for node ``.nvmrc`` that automatically
+sets to version of the prject
+
 For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
 
 ```
