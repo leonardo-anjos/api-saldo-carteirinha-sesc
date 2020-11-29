@@ -1,4 +1,4 @@
-require('dotenv-flow').config();
+require('dotenv').config({ path: `.env.${process.env.NODE_ENV}` })
 
 const cluster = require("cluster");
 const numCPUs = require("os").cpus().length;
@@ -10,6 +10,7 @@ if (cluster.isMaster) {
   console.log(`${process.env.APP_NAME} - ${process.env.NODE_ENV}`);
   console.log("====================================================");
   console.log(`${process.env.APP_NAME} -> Rodando processador MASTER`);
+
   for (let i = 0; i < numCPUs; i += 1) {
     cluster.fork();
   }
